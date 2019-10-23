@@ -16,6 +16,8 @@ Run `ng build --prod --output-path docs --base-href https://sbudelman.github.io/
 
 > **WARNING**: make sure base-ref path in index.html corresponds to project address, in this case https://sbudelman.github.io/futbol7/
 
+> **WARNING**: verify that `"scope": "./", "start_url": "./",` in manifest.json.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

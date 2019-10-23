@@ -3,8 +3,8 @@
   "short_name": "futbol7",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
-  "display": "standalone",
-  "scope": "https://sbudelman.github.io/futbol7/",
+  "display": "fullscreen",
+  "scope": "./",
   "start_url": "./",
   "icons": [
     {
