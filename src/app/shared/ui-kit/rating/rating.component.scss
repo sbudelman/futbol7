@@ -1,0 +1,16 @@
+.rating {
+  display: inline-flex;
+
+  mat-icon {
+    font-size: small;
+    height: 12px;
+    width: 12px;
+    color: gold;
+  }
+
+  span {
+    line-height: 12px;
+    margin-left: 5px;
+    font-size: small;
+  }
+}

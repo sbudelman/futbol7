@@ -1,0 +1,38 @@
+<mat-drawer-container class="container" hasBackdrop="false">
+  <mat-drawer
+    #drawer
+    class="mat-elevation-z2 sidenav"
+    mode="over"
+    disableClose="true"
+    opened>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+          <button *ngIf="show != 'list'" mat-icon-button aria-label="Go back icon" (click)="onGoBack()">
+            <mat-icon>arrow_back</mat-icon>
+          </button>
+        <span>Hello</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <ng-container *ngIf="show == 'list'">
+      <ng-container *ngFor="let field of fields; let last = last; let i = index">
+        <app-field-card
+        [field]="field"
+        (mouseenter)="onMouseEnter(i)"
+        (mouseleave)="onMouseLeave(i)"
+        (click)="onClick(i)"
+        ></app-field-card>
+        <mat-divider *ngIf="!last"></mat-divider>
+      </ng-container>
+    </ng-container>
+
+    <app-field-details *ngIf="show == 'details'" [field]="fieldFocus"></app-field-details>
+
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <div #map style='width:100vw; height:100vh'></div>
+  </div>
+
+</mat-drawer-container>
+

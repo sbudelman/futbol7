@@ -1,0 +1,16 @@
+<div>
+  <ng-container *ngIf="field.address">
+    <mat-icon>my_location</mat-icon>
+    <p class="table-text">{{ field.address }}</p>
+  </ng-container>
+  <ng-container *ngIf="field.website">
+    <mat-icon>web</mat-icon>
+    <p class="table-text">{{ field.website }}</p>
+  </ng-container>
+  <ng-container *ngIf="field.phone">
+    <mat-icon>local_phone</mat-icon>
+    <p class="table-text">{{ field.phone }}</p>
+  </ng-container>
+</div>
+
+<button mat-stroked-button>Sugerir más información</button>

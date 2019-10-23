@@ -1,0 +1,25 @@
+:host {
+  width: 100%;
+  display: inline-grid;
+  justify-items: center;
+
+  >div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+
+    mat-icon {
+      color: #5C6BC0
+    }
+
+    .table-text {
+      font-size: 0.8em;
+      color: rgba(0,0,0,0.54);
+    }
+  }
+}
+
+button {
+  margin-top: 15px;
+}

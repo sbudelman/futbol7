@@ -1,0 +1,16 @@
+
+.game-post-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 50px;
+
+  app-game-post {
+    margin: 15px;
+  }
+}
+
+.add {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}

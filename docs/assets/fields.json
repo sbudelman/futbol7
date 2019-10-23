@@ -1,0 +1,83 @@
+[
+  {
+    "name":"Polideportivo Las Adelfas",
+    "lat":40.4037663,
+    "lng":-3.6687791,
+    "images": [
+      "assets/fields/adelfas_001.jpg",
+      "assets/fields/adelfas_002.png"
+    ],
+    "address":"Calle Martínez Corrochano, 26, 28007",
+    "phone": "900 000 009",
+    "website": "",
+    "businessHours": [
+      ""
+    ],
+    "rating":3.8,
+    "reviewsTotal":318
+  },
+  {
+    "name":"Polideportivo La Elipa",
+    "lat":40.4143851,
+    "lng":-3.6562874,
+    "images": [
+      "assets/fields/elipa_001.jpg"
+    ],
+    "address":"Calle Alcalde Garrido Juaristi, 17, 28030",
+    "phone": "914 30 35 11",
+    "website": "",
+    "businessHours": [
+      ""
+    ],
+    "rating":4.0,
+    "reviewsTotal":1317
+  },
+  {
+    "name":"Club de Futbol Madrid Río",
+    "lat":40.3961671,
+    "lng":-3.7048823,
+    "images": [
+      "assets/fields/madridrio_001.jpg"
+    ],
+    "address":"28005",
+    "phone": "692 50 63 84",
+    "website": "cfmadridrio.com",
+    "businessHours": [
+      ""
+    ],
+    "rating":3.8,
+    "reviewsTotal":318
+  },
+  {
+    "name":"Centro Deportivo Municipal La Chopera",
+    "lat":40.416030,
+    "lng":-3.680050,
+    "images": [
+      "assets/fields/madridrio_001.jpg"
+    ],
+    "address":"Paseo Fernán Núñez, 3, 28009",
+    "phone": "914 20 11 54",
+    "website": "madrid.es",
+    "businessHours": [
+      ""
+    ],
+    "rating":3.8,
+    "reviewsTotal":318
+  },
+  {
+    "name":"Centro Deportivo Municipal Aluche",
+    "lat":40.382800,
+    "lng":-3.773280,
+    "images": [
+      "assets/fields/madridrio_001.jpg"
+    ],
+    "address":"Av. de Las Águilas, 14, 28044 Madrid",
+    "phone": "917 06 28 68",
+    "website": "madrid.es",
+    "businessHours": [
+      ""
+    ],
+    "rating":3.8,
+    "reviewsTotal":318
+  }
+]

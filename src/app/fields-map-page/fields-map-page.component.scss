@@ -1,0 +1,15 @@
+.sidenav {
+  width: 400px;
+  min-width: 400px;
+
+  .date-picker {
+    visibility: hidden;
+    width: 0;
+  }
+}
+
+.sidenav-content {
+  agm-map {
+    height: 100vh;
+  }
+}
