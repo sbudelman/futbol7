@@ -41,7 +41,7 @@ import { environment } from '../environments/environment';
       apiKey: 'AIzaSyDPc0IktYb29nfcn_eaXnLgIkqjGNtQbxw'
     }),
     HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
