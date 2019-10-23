@@ -14,6 +14,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build --prod --output-path docs --base-href /futbol7/`. When the build is complete, make a copy of docs/index.html and name it docs/404.html. Commit your changes and push. If needed, on the GitHub project page, configure it to [publish from the docs folder](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch).
 
+> **WARNING**: make sure base-ref path in index.html corresponds to project address, in this case https://sbudelman.github.io/futbol7/
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
