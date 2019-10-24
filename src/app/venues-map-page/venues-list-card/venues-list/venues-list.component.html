@@ -1,0 +1,3 @@
+<div *ngFor="let venue of venuesService.venues$ | async">
+  <app-venue-item [venue]="venue"></app-venue-item>
+</div>

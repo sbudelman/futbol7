@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { AngularMaterialModule } from './shared/angular-material/angular-material.module';
@@ -18,6 +17,11 @@ import { CategoryRatingComponent } from './fields-map-page/field-details/categor
 import { FieldDetailsInfoComponent } from './fields-map-page/field-details/field-details-info/field-details-info.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { VenuesMapPageComponent } from './venues-map-page/venues-map-page.component';
+import { VenuesMapComponent } from './venues-map-page/venues-map/venues-map.component';
+import { VenuesListCardComponent } from './venues-map-page/venues-list-card/venues-list-card.component';
+import { VenuesListComponent } from './venues-map-page/venues-list-card/venues-list/venues-list.component';
+import { VenueItemComponent } from './venues-map-page/venues-list-card/venues-list/venue-item/venue-item.component';
 
 @NgModule({
   declarations: [
@@ -31,19 +35,21 @@ import { environment } from '../environments/environment';
     FieldDetailsImagesComponent,
     CategoryRatingComponent,
     FieldDetailsInfoComponent,
+    VenuesMapPageComponent,
+    VenuesMapComponent,
+    VenuesListCardComponent,
+    VenuesListComponent,
+    VenueItemComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
     AppRoutingModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDPc0IktYb29nfcn_eaXnLgIkqjGNtQbxw'
-    }),
     HttpClientModule,
     ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,0 +1,13 @@
+<div class="backdrop" (click)="toggle()" [@openClose]="isOpen ? 'backdropOn' : 'backdropOff'"></div>
+
+<mat-card [@openClose]="isOpen ? 'open' : 'closed'">
+
+  <mat-card-title (click)="toggle()">Canchas en Madrid</mat-card-title>
+
+  <mat-divider></mat-divider>
+
+  <div class="content">
+    <app-venues-list></app-venues-list>
+  </div>
+
+</mat-card>

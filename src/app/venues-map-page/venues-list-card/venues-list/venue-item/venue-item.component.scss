@@ -1,0 +1,30 @@
+:host {
+  display: grid;
+  grid-template-columns: 90px minmax(auto, 1fr);
+  align-items: center;
+
+  .field-pic {
+    height: 60px;
+    width: 80px;
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 20px;
+
+    mat-card-title {
+      font-size: medium;
+    }
+
+    mat-card-subtitle {
+      font-size: small;
+    }
+  }
+}
+
+:host:hover {
+  background-color: rgba(0,0,0,0.05);
+  cursor: pointer;
+}

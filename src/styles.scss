@@ -1,9 +1,19 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
-html, body { height: 100%; }
+html, body {
+  height: 100vh;
+}
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: rgb(245, 245, 245);
+  overflow: hidden;
+}
+
+// Styles for entry components
+.venues-list-sheet {
+  height: 90vh;
+  border-radius: 5px;
+  margin-bottom: -5px;
 }
