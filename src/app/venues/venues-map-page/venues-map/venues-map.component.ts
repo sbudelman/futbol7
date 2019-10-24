@@ -4,6 +4,7 @@ import { VenuesService } from '../venues.service';
 import { take } from 'rxjs/operators';
 import { VenuesMapService } from './venues-map.service';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-venues-map',
@@ -35,7 +36,8 @@ export class VenuesMapComponent implements OnInit, OnDestroy {
 
   constructor(
     public venuesService: VenuesService,
-    public venuesMapService: VenuesMapService
+    public venuesMapService: VenuesMapService,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -55,7 +57,7 @@ export class VenuesMapComponent implements OnInit, OnDestroy {
     })
 
     this.venuesMapService.focus$.subscribe(venueId => {
-      this.focusOnVenue(this.venues.map(v => v.id).indexOf(venueId));
+      this.focusOnMarker(this.venues.map(v => v.id).indexOf(venueId));
     })
   }
 
@@ -63,19 +65,20 @@ export class VenuesMapComponent implements OnInit, OnDestroy {
     this.map = new google.maps.Map(this.mapElement.nativeElement, this.mapProperties);
   }
 
-  focusOnVenue(i: number) {
-    this.focusOnMarker(this.markers[i]);
+  focusOnVenue(venueId: string) {
+    this.venuesMapService.focusOnVenue(venueId);
+    this.router.navigate(['venues', venueId]);
   }
 
-  private focusOnMarker(marker: google.maps.Marker) {
+  private focusOnMarker(i: number) {
     this.map.setZoom(17);
-    this.map.setCenter(marker.getPosition());
+    this.map.setCenter(this.markers[i].getPosition());
   }
 
   private markerClick() {
-    (<google.maps.Marker[]>this.markers).forEach((marker) => {
+    (<google.maps.Marker[]>this.markers).forEach((marker, i) => {
       marker.addListener('click', () => {
-        this.focusOnMarker(marker);
+        this.focusOnVenue(this.venues[i].id);
       })
     })
   }
