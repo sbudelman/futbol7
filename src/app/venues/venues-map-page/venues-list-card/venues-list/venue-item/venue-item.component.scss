@@ -4,9 +4,10 @@
   align-items: center;
 
   .field-pic {
-    height: 60px;
+    height: 80px;
     width: 80px;
     object-fit: cover;
+    border-radius: 5px;
   }
 
   .info {
