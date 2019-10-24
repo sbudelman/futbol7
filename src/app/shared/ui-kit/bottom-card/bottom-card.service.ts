@@ -10,7 +10,7 @@ export enum BottomCardState {
   providedIn: 'root'
 })
 export class BottomCardService {
-  private stateSubject = new BehaviorSubject<BottomCardState>(BottomCardState.open);
+  private stateSubject = new BehaviorSubject<BottomCardState>(BottomCardState.closed);
   state$ = this.stateSubject.asObservable()
 
   constructor() { }
