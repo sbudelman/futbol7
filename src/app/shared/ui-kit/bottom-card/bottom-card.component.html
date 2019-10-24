@@ -1,4 +1,5 @@
-<div class="backdrop" (click)="toggle()" [@openClose]="(bcService.state$ | async) == 'open' ? 'backdropOn' : 'backdropOff'"></div>
+<div class="backdrop" (click)="bcService.changeState('closed')"
+[@openClose]="(bcService.state$ | async) == 'open' ? 'backdropOn' : 'backdropOff'"></div>
 
 <mat-card [@openClose]="(bcService.state$ | async) == 'open' ? 'open' : 'closed'">
 

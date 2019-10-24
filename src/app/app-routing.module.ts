@@ -4,8 +4,14 @@ import { GameListPageComponent } from './game-list-page/game-list-page.component
 import { VenuesMapPageComponent } from './venues/venues-map-page/venues-map-page.component';
 
 const routes: Routes = [
-  { path: '', component: VenuesMapPageComponent },
+  { path: 'venues',
+      loadChildren: () => import('./venues/venues.module').then(m => m.VenuesModule) },
   { path: 'games', component: GameListPageComponent },
+  {
+    path: '',
+    redirectTo: 'venues',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

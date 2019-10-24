@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { VenuesService } from '../../venues.service';
 import { VenuesMapService } from '../../venues-map/venues-map.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-venues-list',
@@ -12,6 +13,7 @@ export class VenuesListComponent implements OnInit {
   constructor(
     public venuesService: VenuesService,
     private venuesMapService: VenuesMapService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -19,5 +21,6 @@ export class VenuesListComponent implements OnInit {
 
   onSelectVenue(venueId: string) {
     this.venuesMapService.focusOnVenue(venueId);
+    this.router.navigate(['venues', venueId]);
   }
 }
