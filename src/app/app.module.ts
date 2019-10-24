@@ -22,6 +22,7 @@ import { VenuesMapComponent } from './venues-map-page/venues-map/venues-map.comp
 import { VenuesListCardComponent } from './venues-map-page/venues-list-card/venues-list-card.component';
 import { VenuesListComponent } from './venues-map-page/venues-list-card/venues-list/venues-list.component';
 import { VenueItemComponent } from './venues-map-page/venues-list-card/venues-list/venue-item/venue-item.component';
+import { BottomCardComponent } from './shared/ui-kit/bottom-card/bottom-card.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { VenueItemComponent } from './venues-map-page/venues-list-card/venues-li
     VenuesMapComponent,
     VenuesListCardComponent,
     VenuesListComponent,
-    VenueItemComponent
+    VenueItemComponent,
+    BottomCardComponent
   ],
   imports: [
     BrowserModule,

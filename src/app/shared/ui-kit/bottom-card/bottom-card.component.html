@@ -1,0 +1,7 @@
+<div class="backdrop" (click)="toggle()" [@openClose]="(bcService.state$ | async) == 'open' ? 'backdropOn' : 'backdropOff'"></div>
+
+<mat-card [@openClose]="(bcService.state$ | async) == 'open' ? 'open' : 'closed'">
+
+    <ng-content></ng-content>
+
+</mat-card>

@@ -1,13 +1,12 @@
-<div class="backdrop" (click)="toggle()" [@openClose]="(bcService.state$ | async) == 'open' ? 'backdropOn' : 'backdropOff'"></div>
+<app-bottom-card>
 
-<mat-card [@openClose]="(bcService.state$ | async) == 'open' ? 'open' : 'closed'">
+    <mat-card-title (click)="toggle()">Canchas en Madrid</mat-card-title>
 
-  <mat-card-title (click)="toggle()">Canchas en Madrid</mat-card-title>
+    <mat-divider></mat-divider>
 
-  <mat-divider></mat-divider>
+    <div class="content">
+      <app-venues-list></app-venues-list>
+    </div>
 
-  <div class="content">
-    <app-venues-list></app-venues-list>
-  </div>
+</app-bottom-card>
 
-</mat-card>
