@@ -13,7 +13,7 @@ import { BottomCardService } from './bottom-card.service';
         height: '86vh'
       })),
       state('closed', style({
-        height: '200px'
+        height: '255px'
       })),
       state('backdropOn', style({
         opacity: 1

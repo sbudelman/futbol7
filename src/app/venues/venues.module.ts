@@ -8,6 +8,7 @@ import { VenuesListComponent } from './venues-map-page/venues-list-card/venues-l
 import { VenueItemComponent } from './venues-map-page/venues-list-card/venues-list/venue-item/venue-item.component';
 import { VenuesRoutingModule } from './venues-routing.module';
 import { VenueSummaryComponent } from './venues-map-page/venue-summary/venue-summary.component';
+import { VenueSummaryDetailsComponent } from './venues-map-page/venue-summary/venue-summary-details/venue-summary-details.component';
 
 
 
@@ -19,6 +20,7 @@ import { VenueSummaryComponent } from './venues-map-page/venue-summary/venue-sum
     VenuesListComponent,
     VenueItemComponent,
     VenueSummaryComponent,
+    VenueSummaryDetailsComponent,
   ],
   imports: [
     CommonModule,

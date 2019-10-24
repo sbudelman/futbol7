@@ -1,3 +1,12 @@
 <app-bottom-card>
-  <p>venue-summary works!</p>
+  <a mat-mini-fab routerLink=".."><mat-icon>arrow_back</mat-icon></a>
+
+  <img class="picture" [src]="venue.images[0]" alt="venue">
+
+  <div class="summary-details">
+      <app-venue-summary-details *ngIf="venue" [venue]="venue"></app-venue-summary-details>
+
+      <button mat-raised-button color="accent">Reserve</button>
+  </div>
+
 </app-bottom-card>

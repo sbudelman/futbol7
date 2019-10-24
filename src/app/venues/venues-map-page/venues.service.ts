@@ -14,34 +14,13 @@ export class VenuesService {
 
   constructor(public http: HttpClient) { }
 
-  public getVenues(): Observable<any> {
+  getVenues(): Observable<any> {
     return this.http.get("./assets/fields.json")
       .pipe(tap(venues => this.venuesSubject.next(venues)));
   }
 
-  // Method to get place details from google maps places api. But it charges too much!
-  // getFields(map: any) {
-  //   let request: any;
-  //   let service = new google.maps.places.PlacesService(map);
-
-  //   placeIdList.forEach(placeId => {
-  //     setTimeout(() => {
-
-  //       request = {
-  //         placeId: placeId,
-  //         fields: ['id', 'name', 'formatted_address', 'photo', 'opening_hours',
-  //         'rating', 'user_ratings_total', 'formatted_phone_number', 'url']
-  //       }
-  //       // service.getDetails(request, function(place, status) {
-  //       //   console.log(status);
-  //       //   console.log(place);
-  //       //   if (status == google.maps.places.PlacesServiceStatus.OK) {
-  //       //     this.fieldsArray.push(place);
-  //       //   }
-  //       // })
-
-  //     }, 3000);
-
-  //   });
-  // }
+  getVenueById(id: string): Venue {
+    let venues = this.venuesSubject.getValue();
+    return venues.filter(v => v.id == id)[0];
+  }
 }
