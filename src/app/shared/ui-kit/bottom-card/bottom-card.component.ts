@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { BottomCardService } from './bottom-card.service';
+import { BottomCardService, BottomCardState } from './bottom-card.service';
 
 @Component({
   selector: 'app-bottom-card',
@@ -40,4 +40,7 @@ export class BottomCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  onBackdropClick() {
+    this.bcService.changeState(BottomCardState.closed);
+  }
 }
