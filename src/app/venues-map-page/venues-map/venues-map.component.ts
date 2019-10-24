@@ -1,14 +1,16 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { Venue } from '../venue.model';
 import { VenuesService } from '../venues.service';
 import { take } from 'rxjs/operators';
+import { VenuesMapService } from './venues-map.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-venues-map',
   templateUrl: './venues-map.component.html',
   styleUrls: ['./venues-map.component.scss']
 })
-export class VenuesMapComponent implements OnInit {
+export class VenuesMapComponent implements OnInit, OnDestroy {
   lat = 40.4078698;
   lng = -3.7096207;
   venues: Venue[];
@@ -26,10 +28,15 @@ export class VenuesMapComponent implements OnInit {
       fullscreenControl: false
   };
 
+  private focusVenueSub: Subscription;
+
   @ViewChild('map', {static: false}) mapElement: any;
   map: google.maps.Map;
 
-  constructor(public venuesService: VenuesService) { }
+  constructor(
+    public venuesService: VenuesService,
+    public venuesMapService: VenuesMapService
+  ) { }
 
   ngOnInit() {
     this.venuesService.getVenues().pipe(take(1)).subscribe(venues => {
@@ -46,28 +53,35 @@ export class VenuesMapComponent implements OnInit {
 
       this.markerClick();
     })
+
+    this.venuesMapService.focus$.subscribe(venueId => {
+      this.focusOnVenue(this.venues.map(v => v.id).indexOf(venueId));
+    })
   }
 
   ngAfterViewInit() {
     this.map = new google.maps.Map(this.mapElement.nativeElement, this.mapProperties);
   }
 
-  onClick(i: number) {
-    this.focusOnVenue(this.markers[i], i);
+  focusOnVenue(i: number) {
+    this.focusOnMarker(this.markers[i]);
   }
 
-  private focusOnVenue(marker: google.maps.Marker, index: number) {
+  private focusOnMarker(marker: google.maps.Marker) {
     this.map.setZoom(17);
     this.map.setCenter(marker.getPosition());
-    this.venueFocus = this.venues[index]
   }
 
   private markerClick() {
-    (<google.maps.Marker[]>this.markers).forEach((marker, index) => {
+    (<google.maps.Marker[]>this.markers).forEach((marker) => {
       marker.addListener('click', () => {
-        this.focusOnVenue(marker, index);
+        this.focusOnMarker(marker);
       })
     })
+  }
+
+  ngOnDestroy() {
+    this.focusVenueSub.unsubscribe();
   }
 
 }

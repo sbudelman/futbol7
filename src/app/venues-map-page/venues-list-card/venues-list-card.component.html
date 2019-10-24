@@ -1,6 +1,6 @@
-<div class="backdrop" (click)="toggle()" [@openClose]="isOpen ? 'backdropOn' : 'backdropOff'"></div>
+<div class="backdrop" (click)="toggle()" [@openClose]="(bcService.state$ | async) == 'open' ? 'backdropOn' : 'backdropOff'"></div>
 
-<mat-card [@openClose]="isOpen ? 'open' : 'closed'">
+<mat-card [@openClose]="(bcService.state$ | async) == 'open' ? 'open' : 'closed'">
 
   <mat-card-title (click)="toggle()">Canchas en Madrid</mat-card-title>
 

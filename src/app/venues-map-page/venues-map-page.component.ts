@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Venue } from './venue.model';
-import { take } from 'rxjs/operators';
-import { VenuesService } from './venues.service';
 
 @Component({
   selector: 'app-venues-map-page',
@@ -9,16 +6,9 @@ import { VenuesService } from './venues.service';
   styleUrls: ['./venues-map-page.component.scss']
 })
 export class VenuesMapPageComponent implements OnInit {
-  venues: Venue[];
 
-  constructor(
-    public venuesService: VenuesService
-  ) { }
+  constructor() { }
 
   ngOnInit() {
-    this.venuesService.getVenues().pipe(take(1)).subscribe(venues => {
-      this.venues = venues;
-    })
-
   }
 }

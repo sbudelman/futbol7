@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VenuesService } from '../../venues.service';
+import { VenuesMapService } from '../../venues-map/venues-map.service';
 
 @Component({
   selector: 'app-venues-list',
@@ -9,10 +10,14 @@ import { VenuesService } from '../../venues.service';
 export class VenuesListComponent implements OnInit {
 
   constructor(
-    public venuesService: VenuesService
+    public venuesService: VenuesService,
+    private venuesMapService: VenuesMapService,
   ) { }
 
   ngOnInit() {
   }
 
+  onSelectVenue(venueId: string) {
+    this.venuesMapService.focusOnVenue(venueId);
+  }
 }

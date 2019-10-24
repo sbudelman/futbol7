@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { VenuesMapService } from '../venues-map/venues-map.service';
+import { BottomCardService, BottomCardState } from './bottom-card.service';
 
 @Component({
   selector: 'app-venues-list-card',
@@ -31,15 +33,16 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ]
 })
 export class VenuesListCardComponent implements OnInit {
-  isOpen = true;
-
-  constructor() { }
+  constructor(
+    private venuesMapService: VenuesMapService,
+    public bcService: BottomCardService,
+  ) { }
 
   ngOnInit() {
   }
 
   toggle() {
-    this.isOpen = !this.isOpen;
+    this.bcService.toggle();
   }
 
 }
