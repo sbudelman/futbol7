@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VenuesMapService } from '../venues-map/venues-map.service';
-import { BottomCardService } from '../../shared/ui-kit/bottom-card/bottom-card.service';
+import { BottomCardService } from '../../../shared/ui-kit/bottom-card/bottom-card.service';
 
 @Component({
   selector: 'app-venues-list-card',

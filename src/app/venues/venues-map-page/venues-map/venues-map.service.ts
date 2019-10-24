@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { BottomCardService, BottomCardState } from '../../shared/ui-kit/bottom-card/bottom-card.service';
+import { BottomCardService, BottomCardState } from '../../../shared/ui-kit/bottom-card/bottom-card.service';
 
 @Injectable({
   providedIn: 'root'
