@@ -1,0 +1,94 @@
+{
+  "configVersion": 1,
+  "timestamp": 1571988165376,
+  "index": "https://sbudelman.github.io/futbol7/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://sbudelman.github.io/futbol7/5-es2015.75c732e1d7d674ca696d.js",
+        "https://sbudelman.github.io/futbol7/5-es5.75c732e1d7d674ca696d.js",
+        "https://sbudelman.github.io/futbol7/favicon.ico",
+        "https://sbudelman.github.io/futbol7/index.html",
+        "https://sbudelman.github.io/futbol7/main-es2015.157c72d8327ece270a6a.js",
+        "https://sbudelman.github.io/futbol7/main-es5.157c72d8327ece270a6a.js",
+        "https://sbudelman.github.io/futbol7/manifest.webmanifest",
+        "https://sbudelman.github.io/futbol7/polyfills-es2015.d3e61f0dd2b58e518eca.js",
+        "https://sbudelman.github.io/futbol7/polyfills-es5.f8b5a32bf736d11d106f.js",
+        "https://sbudelman.github.io/futbol7/runtime-es2015.e860c69671e240eec30d.js",
+        "https://sbudelman.github.io/futbol7/runtime-es5.e860c69671e240eec30d.js",
+        "https://sbudelman.github.io/futbol7/styles.ddb9ed212a92a881826b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://sbudelman.github.io/futbol7/assets/fields.json",
+        "https://sbudelman.github.io/futbol7/assets/fields/adelfas_001.jpg",
+        "https://sbudelman.github.io/futbol7/assets/fields/adelfas_002.png",
+        "https://sbudelman.github.io/futbol7/assets/fields/elipa_001.jpg",
+        "https://sbudelman.github.io/futbol7/assets/fields/madridrio_001.jpg",
+        "https://sbudelman.github.io/futbol7/assets/icons/icon-128x128.png",
+        "https://sbudelman.github.io/futbol7/assets/icons/icon-144x144.png",
+        "https://sbudelman.github.io/futbol7/assets/icons/icon-152x152.png",
+        "https://sbudelman.github.io/futbol7/assets/icons/icon-192x192.png",
+        "https://sbudelman.github.io/futbol7/assets/icons/icon-384x384.png",
+        "https://sbudelman.github.io/futbol7/assets/icons/icon-512x512.png",
+        "https://sbudelman.github.io/futbol7/assets/icons/icon-72x72.png",
+        "https://sbudelman.github.io/futbol7/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://sbudelman.github.io/futbol7/5-es2015.75c732e1d7d674ca696d.js": "f74e830aefc5fc361538149baf756f17d3f6500e",
+    "https://sbudelman.github.io/futbol7/5-es5.75c732e1d7d674ca696d.js": "f74e830aefc5fc361538149baf756f17d3f6500e",
+    "https://sbudelman.github.io/futbol7/assets/fields.json": "65f40783d8a033b3391153efad42cec1e2090f7b",
+    "https://sbudelman.github.io/futbol7/assets/fields/adelfas_001.jpg": "c4432ead86f401074eb576e66009e6e824460eba",
+    "https://sbudelman.github.io/futbol7/assets/fields/adelfas_002.png": "b4930222c83501fad3dcd706edc509e1219daf10",
+    "https://sbudelman.github.io/futbol7/assets/fields/elipa_001.jpg": "589ec3561047a4a04657bef073cfd44d2470c2ca",
+    "https://sbudelman.github.io/futbol7/assets/fields/madridrio_001.jpg": "39311edf617439ca684005d8a6518a2e42fcb7f5",
+    "https://sbudelman.github.io/futbol7/assets/icons/icon-128x128.png": "bc93e2609971985d2ec09919b4f79dcc3c918b0f",
+    "https://sbudelman.github.io/futbol7/assets/icons/icon-144x144.png": "dee499e470e7810fd3d3dcdf17135f47153cd54a",
+    "https://sbudelman.github.io/futbol7/assets/icons/icon-152x152.png": "73529a22c351a8f1c345045d9b6f20bd018ef343",
+    "https://sbudelman.github.io/futbol7/assets/icons/icon-192x192.png": "9b8373e537089adb947e41d22e0d3d54be26b225",
+    "https://sbudelman.github.io/futbol7/assets/icons/icon-384x384.png": "82ed776d8d1c19ecaabc1b1cbad91c5808ae17c1",
+    "https://sbudelman.github.io/futbol7/assets/icons/icon-512x512.png": "0b9d96b610675487df6134a898a4e62cd9e8a53a",
+    "https://sbudelman.github.io/futbol7/assets/icons/icon-72x72.png": "19fd9a42de80730d5730aacbaf018b7c00ee46d8",
+    "https://sbudelman.github.io/futbol7/assets/icons/icon-96x96.png": "4dfd0b38265f66e6bd6b9c19efbcd71e62bf7451",
+    "https://sbudelman.github.io/futbol7/favicon.ico": "dd7a993f857c2645062fcf662656c3ae966a2a60",
+    "https://sbudelman.github.io/futbol7/index.html": "fee4a64d8bab4856c0f715f0141d4ee0c8f36019",
+    "https://sbudelman.github.io/futbol7/main-es2015.157c72d8327ece270a6a.js": "2ae02a7344a6ccf9483aae3fc5b3f3639c6c7c9d",
+    "https://sbudelman.github.io/futbol7/main-es5.157c72d8327ece270a6a.js": "916aaea4bcfdba4ae88b104d0397062258e0d274",
+    "https://sbudelman.github.io/futbol7/manifest.webmanifest": "e1911001279ed377da81b9278240725dab9d490d",
+    "https://sbudelman.github.io/futbol7/polyfills-es2015.d3e61f0dd2b58e518eca.js": "e2f28c3743afd2899e140ad831df9675c233c02b",
+    "https://sbudelman.github.io/futbol7/polyfills-es5.f8b5a32bf736d11d106f.js": "bc55c457c97924a880c8c5bee5337b8d12a7d7d8",
+    "https://sbudelman.github.io/futbol7/runtime-es2015.e860c69671e240eec30d.js": "1c32720453ce5b9dc4ae3f4b8fea1eb52dcd175f",
+    "https://sbudelman.github.io/futbol7/runtime-es5.e860c69671e240eec30d.js": "7a292b1cd56329854d7dd16d7c74dd2a3262aecf",
+    "https://sbudelman.github.io/futbol7/styles.ddb9ed212a92a881826b.css": "a11cce1349f1a94bfb169cf07db3bb943926e399"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
