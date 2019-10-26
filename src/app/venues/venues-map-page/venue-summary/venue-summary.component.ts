@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Venue } from '../venue.model';
 import { VenuesService } from '../venues.service';
@@ -16,6 +16,7 @@ export class VenueSummaryComponent implements OnInit, OnDestroy {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     public venuesService: VenuesService,
   ) { }
 
@@ -29,4 +30,7 @@ export class VenueSummaryComponent implements OnInit, OnDestroy {
     this.routeSub.unsubscribe()
   }
 
+  openDetail() {
+    this.router.navigate(['venues','detail',this.venue.id]);
+  }
 }

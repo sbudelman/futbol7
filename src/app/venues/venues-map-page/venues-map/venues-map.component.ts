@@ -12,14 +12,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./venues-map.component.scss']
 })
 export class VenuesMapComponent implements OnInit, OnDestroy {
-  lat = 40.4078698;
+  lat = 40.3878698;
   lng = -3.7096207;
   venues: Venue[];
   venueFocus: Venue;
   markers: any[] = [];
   mapProperties = {
       center: new google.maps.LatLng(this.lat, this.lng),
-      zoom: 12,
+      zoom: 11,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       zoomControl: false,
       mapTypeControl: false,
@@ -56,7 +56,7 @@ export class VenuesMapComponent implements OnInit, OnDestroy {
       this.markerClick();
     })
 
-    this.venuesMapService.focus$.subscribe(venueId => {
+    this.focusVenueSub = this.venuesMapService.focus$.subscribe(venueId => {
       this.focusOnMarker(this.venues.map(v => v.id).indexOf(venueId));
     })
   }

@@ -12,7 +12,8 @@ export class VenuesService {
   venuesSubject = new BehaviorSubject<Venue[]>([]);
   venues$ = this.venuesSubject.asObservable();
 
-  constructor(public http: HttpClient) { }
+  constructor(public http: HttpClient) {
+   }
 
   getVenues(): Observable<any> {
     return this.http.get("./assets/fields.json")

@@ -1,0 +1,7 @@
+<mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Elige un día">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker touchUi #picker></mat-datepicker>
+</mat-form-field>
+
+<app-day-view-graph></app-day-view-graph>

@@ -1,0 +1,47 @@
+:host {
+  height: 100%;
+
+  .go-back {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+
+    color: white;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 220px;
+    z-index: 2;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &:after {
+      content: '\A';
+      position: absolute;
+      width: 100%; height:100%;
+      top:0; left:0;
+      background:rgba(0,0,0,0.2);
+    }
+
+  }
+
+  .container {
+    background-color: white;
+    height: 100%;
+    padding: 230px 15px 10px;
+  }
+
+  .view-availability {
+    > div {
+      text-align: center;
+    }
+  }
+}

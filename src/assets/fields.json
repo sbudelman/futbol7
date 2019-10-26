@@ -10,7 +10,7 @@
     ],
     "address":"Calle Martínez Corrochano, 26, 28007",
     "phone": "900 000 009",
-    "website": "",
+    "website": "madrid.es",
     "businessHours": [
       ""
     ],
@@ -87,14 +87,14 @@
   },
   {
     "id": "6",
-    "name":"Centro Deportivo Municipal Aluche",
-    "lat":40.382800,
-    "lng":-3.773280,
+    "name":"Polideportivo Municipal Pradillo",
+    "lat":40.449200,
+    "lng":-3.671750,
     "images": [
-      "assets/fields/madridrio_001.jpg"
+      "assets/fields/pradillo_001.jpg"
     ],
-    "address":"Av. de Las Águilas, 14, 28044 Madrid",
-    "phone": "917 06 28 68",
+    "address":"Calle de Pradillo, 33, 28002 Madrid",
+    "phone": "914 13 71 05",
     "website": "madrid.es",
     "businessHours": [
       ""
@@ -104,15 +104,15 @@
   },
   {
     "id": "7",
-    "name":"Centro Deportivo Municipal Aluche",
-    "lat":40.382800,
-    "lng":-3.773280,
+    "name":"Ocio y Deporte Canal",
+    "lat":40.442157,
+    "lng":-3.705317,
     "images": [
-      "assets/fields/madridrio_001.jpg"
+      "assets/fields/canal_od_001.jpg"
     ],
-    "address":"Av. de Las Águilas, 14, 28044 Madrid",
-    "phone": "917 06 28 68",
-    "website": "madrid.es",
+    "address":"Av. de Filipinas esquina Pablo Iglesias, 28003 Madrid",
+    "phone": "915 45 10 30",
+    "website": "https://www.ocioydeportecanal.es/reservas-futbol7",
     "businessHours": [
       ""
     ],
@@ -121,14 +121,82 @@
   },
   {
     "id": "8",
-    "name":"Centro Deportivo Municipal Aluche",
-    "lat":40.382800,
-    "lng":-3.773280,
+    "name":"Polideportivo Torrespaña",
+    "lat":40.421120,
+    "lng":-3.660850,
     "images": [
-      "assets/fields/madridrio_001.jpg"
+      "assets/fields/torrespana_001.jpg"
     ],
-    "address":"Av. de Las Águilas, 14, 28044 Madrid",
-    "phone": "917 06 28 68",
+    "address":"Calle del Alcalde Sáinz de Baranda, 94, 28028 Madrid",
+    "phone": "917 65 43 30",
+    "website": "http://escuelabreogan.com/",
+    "businessHours": [
+      ""
+    ],
+    "rating":3.8,
+    "reviewsTotal":318
+  },
+  {
+    "id": "9",
+    "name":"Instalación Deportiva Municipal Básica El Espinillo II",
+    "lat":40.360620,
+    "lng":-3.686100,
+    "images": [
+      "assets/fields/elespinillo_001.jpg"
+    ],
+    "address":"Calle del Consenso, 5, 28041 Madrid",
+    "phone": "",
+    "website": "madrid.es",
+    "businessHours": [
+      ""
+    ],
+    "rating":3.8,
+    "reviewsTotal":318
+  },
+  {
+    "id": "10",
+    "name":"Centro Deportivo Municipal Entrevías",
+    "lat":40.377800,
+    "lng":-3.673380,
+    "images": [
+      "assets/fields/entrevias_001.jpg"
+    ],
+    "address":"Ronda del Sur, 4, 28053 Madrid",
+    "phone": "917 85 42 14",
+    "website": "madrid.es",
+    "businessHours": [
+      ""
+    ],
+    "rating":3.8,
+    "reviewsTotal":318
+  },
+  {
+    "id": "11",
+    "name":"Centro Deportivo Municipal Faustina Valladolid",
+    "lat":40.377800,
+    "lng":-3.673380,
+    "images": [
+      "assets/fields/faustinavalladolid_001.jpg"
+    ],
+    "address":"Calle de Ladera de los Almendros, 2, 28032 Madrid",
+    "phone": "917 72 35 91",
+    "website": "madrid.es",
+    "businessHours": [
+      ""
+    ],
+    "rating":3.8,
+    "reviewsTotal":318
+  },
+  {
+    "id": "12",
+    "name":"Centro Deportivo Municipal Felix Rubio",
+    "lat":40.357350,
+    "lng":-3.691610,
+    "images": [
+      "assets/fields/felixrubio_001.jpg"
+    ],
+    "address":"Calle de la Alianza, 4, 28041 Madrid",
+    "phone": "913 18 04 35",
     "website": "madrid.es",
     "businessHours": [
       ""

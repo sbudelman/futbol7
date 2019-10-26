@@ -1,0 +1,17 @@
+<div>
+  <ng-container *ngIf="venue.address">
+    <mat-icon>my_location</mat-icon>
+    <p class="table-text">{{ venue.address }}</p>
+    <mat-divider></mat-divider>
+  </ng-container>
+  <ng-container *ngIf="venue.website">
+    <mat-icon>web</mat-icon>
+    <p class="table-text">{{ venue.website }}</p>
+    <mat-divider></mat-divider>
+  </ng-container>
+  <ng-container *ngIf="venue.phone">
+    <mat-icon>local_phone</mat-icon>
+    <p class="table-text">{{ venue.phone }}</p>
+    <mat-divider></mat-divider>
+  </ng-container>
+</div>

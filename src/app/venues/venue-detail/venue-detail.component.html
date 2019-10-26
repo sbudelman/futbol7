@@ -1,0 +1,24 @@
+<button class="go-back" mat-icon-button (click)="goBack()"><mat-icon>arrow_back</mat-icon></button>
+
+<div class="image">
+  <img class="picture" [src]="venue.images[0]" alt="venue">
+</div>
+
+<div class="container">
+  <div class="summary-details">
+      <app-venue-summary-details *ngIf="venue" [venue]="venue"></app-venue-summary-details>
+  </div>
+
+  <div class="view-availability">
+    <h3>Disponibilidad</h3>
+
+    <div>
+      <app-day-view></app-day-view>
+    </div>
+  </div>
+
+  <div class="info">
+    <h3>Información</h3>
+    <app-venue-detail-info [venue]="venue"></app-venue-detail-info>
+  </div>
+</div>

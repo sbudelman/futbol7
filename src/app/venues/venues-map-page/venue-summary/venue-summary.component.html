@@ -1,10 +1,10 @@
 <app-bottom-card>
   <a mat-mini-fab routerLink=".."><mat-icon>arrow_back</mat-icon></a>
 
-  <img class="picture" [src]="venue.images[0]" alt="venue">
+  <img class="picture" [src]="venue.images[0]" alt="venue" (click)="openDetail()">
 
   <div class="summary-details">
-      <app-venue-summary-details *ngIf="venue" [venue]="venue"></app-venue-summary-details>
+      <app-venue-summary-details *ngIf="venue" [venue]="venue" (click)="openDetail()"></app-venue-summary-details>
 
       <button mat-raised-button color="accent">Reservar</button>
   </div>
